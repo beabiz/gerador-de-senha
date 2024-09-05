@@ -19,7 +19,7 @@
     <img src="assets/img/layout.PNG" alt="Image Example" width="400px">
 </p>
 
-<h2 id="technologies">💻 Tecnologias </h2>
+<h2 id="tech">💻 Tecnologias </h2>
 
 - HTML
 - SASS / CSS
