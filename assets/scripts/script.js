@@ -34,8 +34,7 @@ function generatePassword() {
     if (includeSymbols) charSet += symbolChars;
 
     if (charSet === "") {
-        alert("Selecione pelo menos uma opção para gerar a senha.");
-        return;
+        charSet += lowercaseChars;
     }
 
     let password = "";
@@ -74,10 +73,10 @@ function evaluatePasswordStrength(password) {
     if (/[^a-zA-Z0-9]/.test(password)) strength++;
 
     const strengthBar = document.getElementById("strength-bar");
-    if (password.length >= 12 && strength >= 3) {
+    if (password.length >= 12 && strength >= 4) {
         strengthBar.style.width = "100%";
         strengthBar.style.backgroundColor = "#00FF85";
-    } else if (password.length >= 8 && strength >= 2) {
+    } else if (password.length >= 8 && strength >= 3) {
         strengthBar.style.width = "66%";
         strengthBar.style.backgroundColor = "#FAF408";
     } else {
