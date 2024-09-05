@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gerador de Senha</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="stylesheet" href="./assets/stylesheets/style.css">
+</head>
+
+<body>
+	<header>
+		<img src="./assets/img/unlock.png" alt="Cadeado">
+		<h1>Gerador de senhas</h1>
+		<p>Gere instantaneamente uma senha aleatória e segura</p>
+	</header>
+
+	<main>
+		<section id="input-password">
+			<label for="password">senha</label>
+			<input id="password" type="text" readonly disabled />
+			<button id="copy-icon" class="btnIcon">
+				<img src="./assets/img/copy.png" alt="">
+			</button>
+			<button id="generate-btn" class="btnIcon">
+				<img src="./assets/img/refresh.png" alt="">
+			</button>
+		</section>
+
+		<section id="settings-password">
+			<div class="title-box">
+				<h2>Personalize sua senha</h2>
+			</div>
+
+			<div class="body-box">
+				<div class="num-caracteres">
+					<h4>Número de caracteres</h4>
+					<input id="inputSizePass" type="range" min="6" max="24" />
+					<input id="inputRangeSizePass" type="text" value="12" disabled>
+				</div>
+
+				<div class="caracteres">
+					<h4>Características da senha</h4>
+					<div>
+						<input id="lowercase" type="checkbox" checked />
+						<label for="lowercase">Letras minúsculas</label>
+					</div>
+					<div>
+						<input id="uppercase" type="checkbox" checked />
+						<label for="uppercase">Letras maiúsculas</label>
+					</div>
+					<div>
+						<input id="numbers" type="checkbox" />
+						<label for="numbers">Números</label>
+					</div>
+					<div>
+						<input id="symbols" type="checkbox" />
+						<label for="symbols">Símbolos</label>
+					</div>
+				</div>
+
+				<div class="bar">
+					<h4>Força da senha</h4>
+					<div class="strength-meter">
+						<div id="strength-bar"></div>
+					</div>
+					<div class="status status-strength">
+						<span>Fraca</span>
+						<span>Média</span>
+						<span>Forte</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="copy-password">
+			<button id="copy-btn">Copiar senha</button>
+		</section>
+	</main>
+
+	<script src="assets/scripts/script.js"></script>
+</body>
+
+</html>

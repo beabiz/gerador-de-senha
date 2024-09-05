@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto Mono";
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42.2px;
+}
+
+h4 {
+  color: #8A87AA;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+body {
+  background-color: #0F021B;
+  color: white;
+  height: 100vh;
+  display: flex;
+  gap: 5vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header {
+  text-align: center;
+}
+body header p {
+  font-size: smaller;
+}
+body main {
+  width: 100%;
+  display: flex;
+  gap: 5vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main section {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+body main #input-password {
+  width: 57%;
+  height: 30%;
+  background-color: #2C1746;
+  border-bottom: 5px solid #FD58FF;
+  align-items: center;
+}
+body main #input-password label {
+  font-size: 20px;
+  font-weight: 500;
+  color: #8A87AA;
+  padding-left: 1vw;
+  align-items: center;
+}
+body main #input-password input {
+  background-color: #2C1746;
+  width: 100%;
+  height: 12vh;
+  border: none;
+  margin: 0 2vw;
+  font-family: "Roboto Mono";
+  color: white;
+}
+body main #input-password .btnIcon {
+  all: unset;
+  cursor: pointer;
+  margin-right: 1vw;
+  height: 100%;
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #input-password .btnIcon:hover {
+  background-color: #8A87AA;
+}
+body main #settings-password {
+  width: 57%;
+  height: 60%;
+  border: 1px solid #694A81;
+  background-color: #180828;
+  gap: 2vh;
+  flex-direction: column;
+}
+body main #settings-password .title-box {
+  padding: 2vh 2vw 0;
+  margin-bottom: 0px;
+}
+body main #settings-password .body-box {
+  padding: 2vh 2vw 5vh;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 2vw;
+  justify-content: space-between;
+}
+body main #settings-password .body-box label {
+  color: #8A87AA;
+  font-size: 0.7rem;
+}
+body main #settings-password .body-box .num-caracteres {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+body main #settings-password .body-box .num-caracteres #inputRangeSizePass {
+  width: 76px;
+  height: 55px;
+  margin-top: 15px;
+  background-color: #2C1746;
+  border: 1px solid #694A81;
+  color: #8A87AA;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0px 10px;
+}
+body main #settings-password .body-box .num-caracteres #inputSizePass {
+  background: linear-gradient(to right, white 0%, white 50%, #2C1746 50%, #2C1746 100%);
+  border: solid 1px #2C1746;
+  outline: none;
+}
+body main #settings-password .body-box .num-caracteres #inputSizePass[type=range] {
+  width: auto;
+  height: 0.4vw;
+  margin-top: 15px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 10px;
+  accent-color: white;
+}
+body main #settings-password .body-box .num-caracteres #inputSizePass[type=range]:-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+body main #settings-password .body-box .caracteres h4 {
+  margin-bottom: 25px;
+}
+body main #settings-password .body-box .caracteres input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  outline: none;
+  background-color: #2C1746;
+  position: relative;
+  border: 1px solid #694A81;
+}
+body main #settings-password .body-box .caracteres input[type=checkbox]:checked {
+  background-color: white;
+  border-color: #2C1746;
+}
+body main #settings-password .body-box .caracteres input[type=checkbox]:checked:before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%) rotate(45deg);
+  background-color: transparent;
+}
+body main #settings-password .body-box .bar h4 {
+  margin-bottom: 30px;
+}
+body main #settings-password .body-box .bar .strength-meter {
+  width: auto;
+  height: 32px;
+  background-color: #2C1746;
+  overflow: hidden;
+}
+body main #settings-password .body-box .bar .strength-meter #strength-bar {
+  height: 100%;
+  width: 0;
+  background-color: #E71B32;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+body main #settings-password .body-box .bar .status {
+  margin-top: 10px;
+}
+body main #settings-password .body-box .bar .status-strength {
+  display: flex;
+  justify-content: space-between;
+}
+body main #settings-password .body-box .bar .status-strength span {
+  font-size: 15px;
+  color: #8A87AA;
+}
+body main #copy-password {
+  width: 15vw;
+}
+body main #copy-password #copy-btn {
+  width: 154px;
+  height: 46px;
+  color: #0F021B;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 22px;
+  background-color: #FD58FF;
+  padding: 10px 12px;
+  border: none;
+  gap: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+  body header {
+    margin-top: 5vh;
+  }
+  body main section {
+    width: 100%;
+  }
+  body main #input-password .btnIcon {
+    margin-right: 2vw;
+  }
+  body main #settings-password .body-box {
+    flex-direction: column;
+    gap: 5vh;
+  }
+  body main #copy-password {
+    width: auto;
+  }
+}
+@media (max-width: 425px) {
+  body main #input-password {
+    width: 90%;
+  }
+  body main #input-password .btnIcon {
+    margin-right: 20px;
+  }
+  body main #settings-password {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */
