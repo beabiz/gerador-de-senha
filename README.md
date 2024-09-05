@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-     <a href="https://beabiz.github.io/gerador-de-senha">📱Visite meu projeto</a>
+     <a target="_blank" href="https://beabiz.github.io/gerador-de-senha">📱Visite meu projeto</a>
 </p>
 
 <h2 id="layout">🎨 Layout</h2>
