@@ -217,7 +217,7 @@ body main #settings-password .body-box .bar .status-strength span {
   color: #8A87AA;
 }
 body main #copy-password {
-  width: 15vw;
+  width: auto;
 }
 body main #copy-password #copy-btn {
   width: 154px;
